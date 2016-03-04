@@ -1,0 +1,12 @@
+<h2>All Heroes</h2>
+
+<div ng-repeat="hero in heroes" ng-model="heroes">
+    <p>Alias: {{hero.alias}}<br />
+    First Name: {{hero.first_name}}<br />
+    Last Name: {{hero.last_name}}<br />
+    City: {{hero.city}}<br />
+    Primary Power: {{hero.primary_power}}</p>
+    <button ng-click="deleteHero(hero._id)">Delete Hero</button>
+</div>
+
+<p>{{deleted}}</p>

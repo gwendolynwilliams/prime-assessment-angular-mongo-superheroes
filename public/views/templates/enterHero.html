@@ -1,0 +1,37 @@
+<h2>Enter Hero</h2>
+
+<form>
+    <p><label for="alias">Superhero Alias:</label><br/>
+        <input type="text" ng-model="alias" id="alias" size="60" /></p>
+
+    <p><label for="first_name">First Name:</label><br/>
+        <input type="text" ng-model="first_name" id="first_name" size="60" /></p>
+
+    <p><label for="last_name">Last Name:</label><br/>
+        <input type="text" ng-model="last_name" id="last_name" size="60" /></p>
+
+    <p><label for="city">City:</label><br/>
+        <input type="text" ng-model="city" id="city" size="60" /></p>
+
+    <!--not enough time to build this out dynamically-->
+
+        <!--<div ng-repeat="power in powers" ng-model="powers">-->
+            <!--<option value="{{power.power_name}}">{{power.power_name}}</option>-->
+        <!--</div>-->
+
+    <select name="primaryPowerList" ng-model="primary_power">
+    <option value="" selected="selected">Choose a power</option>
+        <option value="Invisibility">Invisibility</option>
+        <option value="Flight">Flight</option>
+        <option value="Speed">Super Speed</option>
+        <option value="Healing">Accelerated Healing</option>
+        <option value="Blast">Power Blast</option>
+        <option value="Animal Affinity">Animal Affinity</option>
+    </select>
+
+    <!--<div ng-repeat="hero in heroes" ng-model="heroes">-->
+
+    <button id="submit" ng-click="addHero()">Enter Hero</button>
+    <!--<p><button id="submit" ng-click="addHero()">Enter Hero</button></p>-->
+
+</form>
